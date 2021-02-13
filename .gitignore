@@ -3,6 +3,7 @@
 
 .idea/
 .mvn/
+target/
 *.iml
 mvnw
 mvnw.cmd

@@ -19,10 +19,11 @@ public class DemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		customer.placeOrder();
+
+		// Sleep a bit since the pub/sub is threaded
 		try {
 			Thread.sleep(2000L);
-		} catch (Exception e) {
-
+		} catch (Exception ignored) {
 		}
 	}
 }
